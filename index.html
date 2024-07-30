@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fit4Life</title>
+    <link rel="icon" href="./img/Fit4Life.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="super-nav">
+        <div class="logo">
+            <img src="./img/Fit4Life.png" alt="Fit4Life">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Find a Location Near You</a></li>|
+                <li><a href="#">Sign in</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="cover">
+            <div class="cover-image">
+                <img src="./img/cover.jpg" alt="cover-image">
+                <div class="cover-content">
+                    <h1>Welcome to Fit4Life</h1>
+                    <p>Your success starts here</p>
+                    <a href="#services" class="cover-button">Join Now</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="service-feature">
+                <div class="image-container">
+                    <img src="./img/cardio.jpg" alt="cardio">
+                    <div class="overlay">
+                        <h2>CARDIO</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="service-feature">
+                <div class="image-container">
+                    <img src="./img/strength.jpg" alt="cardio">
+                    <div class="overlay">
+                        <h2>STRENGTH</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="service-feature">
+                <div class="image-container">
+                    <img src="./img/Cycling.jpg" alt="cardio">
+                    <div class="overlay">
+                        <h2>CYCLING</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="map-container">
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2897.853458462019!2d-80.49735152390365!3d43.42188836736106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882bf508d408f165%3A0xeea5dcab1e397a0e!2sSheridan%20Nurseries%20Limited!5e0!3m2!1sen!2sca!4v1710975886703!5m2!1sen!2sca"
+                        width="600" height="450" frameborder="0" style="border:0" allowfullscreen aria-hidden="false"
+                        tabindex="0">
+                </iframe>
+            </div>
+        </div>
+            <div class="service-feature">
+                <form class="location-form">
+                    <label for="province">Province:</label>
+                    <select id="province" name="province">
+                        <option value="" disabled selected>Select Province</option>
+                        <option value="ontario">Ontario</option>
+                        <option value="british-columbia">British Columbia</option>
+                        <option value="alberta">Alberta</option>
+                        <option value="quebec">Quebec</option>
+                        <option value="manitoba">Manitoba</option>
+                        <option value="saskatchewan">Saskatchewan</option>
+                        <option value="nova-scotia">Nova Scotia</option>
+                        <option value="new-brunswick">New Brunswick</option>
+                        <option value="newfoundland-and-labrador">Newfoundland and Labrador</option>
+                        <option value="prince-edward-island">Prince Edward Island</option>
+                    </select>
+
+                    <label for="city">City:</label>
+                    <select id="city" name="city">
+                        <option value="" disabled selected>Select City</option>
+                        <option value="toronto">Toronto</option>
+                        <option value="ottawa">Ottawa</option>
+                        <option value="mississauga">Mississauga</option>
+                        <option value="brampton">Brampton</option>
+                        <option value="hamilton">Hamilton</option>
+                    </select>
+                    <div class="button-container">
+                    <button type="button" class="search-btn">Search</button>
+                    </div>
+                </form>
+            </div>
+            <div class="service-feature">
+                <div class="service-feature">
+                    <div class="image-container">
+                        <img src="./img/yoga.jpg" alt="cardio">
+                        <div class="overlay">
+                            <h2>YOGA</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <div class="testimonial">
+                <h2>What Our Members Say</h2>
+            </div>
+            <div class="user-review">
+                <div class="user-profile">
+                    <img src="./img/Alice Green.png" alt="Alice" class="user-image">
+                    <div class="user-details">
+                        <h3>Alice Green</h3>
+                        <p class="user-position">Fitness Enthusiast</p>
+                    </div>
+                </div>
+                <blockquote>
+                    "Joining this gym has been one of the best decisions of my life! The facilities are top-notch, and
+                    the staff is incredibly supportive. I've seen amazing results in just a few months."
+                </blockquote>
+            </div>
+            <div class="user-review">
+                <div class="user-profile">
+                    <img src="./img/Michael_Brown.png" alt="Michael" class="user-image">
+                    <div class="user-details">
+                        <h3>Michael Brown</h3>
+                        <p class="user-position">Personal Trainer</p>
+                    </div>
+                </div>
+                <blockquote>
+                    "The community here is fantastic! I love training my clients in an environment that feels both
+                    professional and welcoming. The equipment is always up-to-date, and the atmosphere keeps everyone
+                    motivated."
+                </blockquote>
+            </div>
+            <div class="user-review">
+                <div class="user-profile">
+                    <img src="./img/Linda_scott.png" alt="Linda" class="user-image">
+                    <div class="user-details">
+                        <h3>Linda Scott</h3>
+                        <p class="user-position">Yoga Instructor</p>
+                    </div>
+                </div>
+                <blockquote>
+                    "This gym offers everything I need to maintain my fitness and wellness routine. The classes are
+                    diverse, and the trainers are very knowledgeable. It's the perfect place to find balance and get
+                    strong."
+                </blockquote>
+            </div>
+            <div class="user-review">
+                <div class="user-profile">
+                    <img src="./img/Tom_Jackson.png" alt="Tom" class="user-image">
+                    <div class="user-details">
+                        <h3>Tom Jackson</h3>
+                        <p class="user-position">Bodybuilder</p>
+                    </div>
+                </div>
+                <blockquote>
+                    "I've been a member for over two years, and I've never looked back. The gym's cutting-edge
+                    facilities and supportive community have helped me reach my bodybuilding goals and set new ones."
+                </blockquote>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-section links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#blog">Blog</a></li>
+            </ul>
+        </div>
+        <div class="footer-section social">
+            <h3>Follow Us</h3>
+            <ul>
+                <li><a href="https://facebook.com" target="_blank">
+                        <img src="./img/icons8-facebook-30.png" alt="Facebook Icon"> Facebook
+                    </a>
+                </li>
+                <li><a href="https://twitter.com" target="_blank">
+                        <img src="./img/icons8-twitterx-30.png" alt="Twitter Icon"> Twitter
+                    </a>
+                </li>
+                <li><a href="https://instagram.com" target="_blank">
+                        <img src="./img/icons8-instagram-30.png" alt="Instagram Icon"> Instagram
+                    </a>
+                </li>
+                <li><a href="https://linkedin.com" target="_blank">
+                        <img src="./img/icons8-linked-in-30.png" alt="Linked Icon"> LinkedIn
+                    </a>
+                </li>
+                <li><a href="https://youtube.com" target="_blank">
+                        <img src="./img/icons8-youtube-30.png" alt="youtube Icon"> YouTube
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-section contact">
+            <h3>Contact Us</h3>
+            <ul>
+                <li>239 Fitness Ave, Waterloo, Canada</li>
+                <li>+1 234 567 890</li>
+                <li>info@fit4life.com</li>
+                <li>Mon - Fri: 8:00 AM - 8:00 PM</li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>
