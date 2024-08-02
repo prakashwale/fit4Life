@@ -87,7 +87,8 @@ nav ul li a:hover {
     margin: 0 15px;
 }
 .nav-menu a {
-    color: rgb(13, 12, 12);
+    color: rgb(255, 255, 255);
+    padding: 10px;
     text-decoration: none;
     font-size: 18px;
 }
@@ -511,7 +512,8 @@ footer {
         display: none;
         flex-direction: column;
         width: 100%;
-        background-color: #433f3f;
+        background-color: #726e6e;
+        color:#fff;
         position: absolute;
         top: 240px;
         left: 0;
@@ -519,11 +521,13 @@ footer {
 
     .nav-menu.active {
         display: flex;
+        padding-bottom: 16px;
     }
 
     .nav-menu li {
         margin-bottom: 10px;
         text-align: center;
+        margin-top: 10px;
     }
 
     .hamburger {
