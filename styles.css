@@ -14,6 +14,22 @@ header {
     padding: 20px;
 }
 
+.titleBar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000f7;
+    color: #fff;
+    height: 50px; 
+    padding: 10px;
+    width: 100%; 
+    position: fixed;
+    top: 50;
+    left: 0;
+    text-align: center;
+}
+
+
 .super-nav {
     display: flex;
     align-items: center;
@@ -127,7 +143,7 @@ main {
 .cover-content {
     position: absolute;
     top: 50%;
-    left: 60%;
+    left: 55%;
     color: #fff;
     text-align: center;
 }
