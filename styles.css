@@ -122,6 +122,7 @@ nav ul li a:hover {
     font-weight: 700;
 }
 
+/*membership form Page STARTS*/
 .form-body{
     font-family: 'Roboto', sans-serif;
     display: grid;
@@ -129,7 +130,7 @@ nav ul li a:hover {
     align-items: center;
     height: auto;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-    url('./img/About_Us.webp') no-repeat center center/cover;
+    url('./img/MenBenchPress.png') no-repeat center center/cover;
     padding: 20px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
@@ -213,20 +214,23 @@ input[type="radio"] {
 }
 
 input[type="submit"] {
-    background-color: #333;
+    background-color: #0798ff;
     color: white;
     border: none;
     padding: 15px;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    width: 100%;
+    width: 25%;
+    display: block; 
+    margin: 20px auto;
 }
 
 input[type="submit"]:hover {
-    background-color: #555;
+    background-color: #1c73d1;
 }
+/*membership form Page ENDS*/
 
 /*aboutUs page styles START*/
 .aboutUsMain {
@@ -245,6 +249,7 @@ input[type="submit"]:hover {
     gap: 20px; 
     max-width: 1200px;
     margin: auto;
+    background: linear-gradient(to right, #875fff, #7bfed9);
 }
 
 .introduction-section,
@@ -341,8 +346,8 @@ input[type="submit"]:hover {
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: auto;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-    url('./img/About_Us.webp') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), 
+    url('./img/barbell-1839086_1280.jpg') no-repeat center center/cover;
     color: whitesmoke;
 }
 
