@@ -14,21 +14,6 @@ header {
     padding: 20px;
 }
 
-.titleBar{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #000000f7;
-    color: #fff;
-    height: 50px; 
-    padding: 10px;
-    width: 100%; 
-    position: fixed;
-    top: 50;
-    left: 0;
-    text-align: center;
-}
-
 
 .super-nav {
     display: flex;
@@ -127,15 +112,248 @@ nav ul li a:hover {
     background-color: rgb(0, 0, 0);
 }
 
-main {
-    padding: 20px;
+.title{
+    background-color: #007BFF;
+    color: #fff;
+    padding: 15px;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
 }
+
+.form-body{
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url('./img/About_Us.webp') no-repeat center center/cover;
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.form-container {
+    width: 100%;
+    max-width: 600px;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form h1,p{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+fieldset {
+    border: 1px solid #a52828;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    width: 30%;
+    min-width: 100px;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-right: 20px;
+    text-align: right;
+    white-space: wrap;
+}
+
+.form-group input[type="text"], 
+.form-group input[type="email"], 
+.form-group input[type="tel"], 
+.form-group input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input[type="text"]:focus, 
+.form-group input[type="email"]:focus, 
+.form-group input[type="tel"]:focus, 
+.form-group input[type="date"]:focus{
+    border-color: #007BFF;
+}
+
+.radio-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.radio-group label {
+    margin: 0;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+input[type="radio"] {
+    margin: 0 5px 0 0;
+    transform: scale(1.2);
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/*aboutUs page styles START*/
+.aboutUsMain {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+}
+
+
+.aboutUs-sections-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px; 
+    max-width: 1200px;
+    margin: auto;
+}
+
+.introduction-section,
+.hour-details-section {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: #fff;
+    padding: 40px 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: 20px 0;
+}
+
+.introduction-section h2,
+.hour-details-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff; 
+}
+
+.introduction-section p 
+.hour-details-section p{
+    font-size: 1.2em; 
+    line-height: 1.6; 
+    max-width: 800px; 
+    margin: 0 auto;
+}
+
+.introduction-section,
+.hour-details-section{
+    background-color: #ffffff;
+    padding: 20px;
+    flex: 1; 
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+.hour-details-section table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.hour-details-section th, .hour-details-section td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.hour-details-section th {
+    background-color: #4CAF50;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.hour-details-section tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.hour-details-section tbody tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+.hour-details-section tbody tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer; 
+}
+
+.hour-details-section td {
+    font-size: 14px;
+    color: #333;
+}
+
+.hour-details-section caption {
+    font-size: 18px;
+    margin-bottom: 10px; 
+    font-weight: bold;
+    text-align: left; 
+}
+
+.hour-details-section table {
+    border-radius: 8px;
+    overflow: hidden;
+}
+.about-section{  
+    background-color: #ffffff;
+    padding: 20px;
+    flex: 1; 
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url('./img/About_Us.webp') no-repeat center center/cover;
+    color: whitesmoke;
+}
+
+/*aboutUs page styles END*/
 
 .cover {
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 24px;
+    margin-top: 10px;
     margin-bottom: 20px;
 }
 
@@ -157,6 +375,7 @@ main {
     margin-bottom: 20px;
 }
 
+
 .cover img {
     height: 600px;
     width: 100%;
@@ -165,13 +384,19 @@ main {
 .cover-button {
     position: absolute;
     top: 100%;
-    left: 40%;
+    left: 38%;
     padding: 12px 24px;
     background-color: #1a40d5;
     color: #fff;
     text-decoration: none;
     font-size: 16px;
     border-radius: 5px;
+    
+}
+.cover-button:hover{
+    background-color: #0033ff;
+    font-size: 18px;
+    box-shadow: 3px 4px 5px;
 }
 
 .services {
@@ -197,6 +422,7 @@ main {
     width: 100%;
     height: 200px;
     object-fit: cover;
+    
 }
 
 .overlay {
@@ -223,6 +449,8 @@ main {
 
 .service-feature:hover .overlay {
     background-color: rgba(2, 191, 244, 0.4);
+    font-size: 20px;
+    transform: transform 1s ease, background-color 1s ease
 }
 
 .map {
@@ -308,7 +536,9 @@ main {
 }
 
 .search-btn:hover {
-    background-color: #008ecc;
+    background-color: #0033ff;
+    font-size: 1.1em;
+    box-shadow: 3px 2px 2px;
 }
 
 .testimonials {
@@ -354,10 +584,12 @@ main {
     position: relative;
     margin: 10px;
     min-width: 250px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .user-review:hover {
-    background-color: #a1d5eb;
+    background-color: #b7dff0;
+    transform: scale(1.05);
 }
 
 .user-profile {
@@ -555,6 +787,79 @@ footer {
 
     header nav ul li {
         margin-bottom: 10px;
+    }
+
+    .form-container{
+        width: 90%;
+        max-width: 600px;
+        background-color: #ccc;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .form-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .form-group label {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 5px;
+    }
+
+    .form-group input[type="text"], 
+    .form-group input[type="email"], 
+    .form-group input[type="tel"], 
+    .form-group input[type="date"] {
+        width: 90%;
+        padding: 10px;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        transition: border-color 0.3s ease;
+    }
+
+    .radio-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .aboutUs-sections-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px;
+        gap: 20px; 
+        max-width: 1200px;
+        margin: auto;
+    }
+    .introduction-section,
+    .hour-details-section {
+        padding: 10px 5px;
+        margin: 10px 0;
+    }
+
+    .introduction-section h2,
+    .hour-details-section h2 {
+        font-size: 1.5em;
+    }
+
+    .introduction-section p,
+    .hour-details-section p {
+        font-size: 0.9em;
+    }
+
+    .hour-details-section th, 
+    .hour-details-section td {
+        padding: 8px;
+    }
+
+    .hour-details-section table {
+        font-size: 10px;
+    }
+
+    .hour-details-section caption {
+        font-size: 16px;
     }
 
     .cover {
