@@ -396,13 +396,17 @@ input[type="submit"]:hover {
     margin: 0 10px;
     border: 3px solid blueviolet;
     transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition effect */
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
 }
 
-.membership-option h3 {
+.membership-option h2 {
     font-size: 1.5em;
     color: #333;
     margin-bottom: 10px;
     text-align: center;
+    width: 100%;
 }
 
 .membership-option ul {
@@ -410,6 +414,7 @@ input[type="submit"]:hover {
     padding: 0;
     margin: 0;
     text-align: left;
+    width: 100;
 }
  
 .membership-option ul li {
@@ -452,16 +457,14 @@ input[type="submit"]:hover {
 
 
 .membership-change-btn{
-    display: block;
-    margin: 0 auto;
+    display: inline-block;
     padding: 10px 20px;
+    color: white;
     background-color: #1a40d5;
-    color: #fff;
-    border: none;
+    text-decoration: none;
     border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s; /* Smooth background color transition */
+    text-align: center;
+    margin-top: 20px;
 }
 
 .workout-levels-section {
