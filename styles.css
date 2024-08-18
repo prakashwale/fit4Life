@@ -18,10 +18,10 @@ header {
 .super-nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: #000000f7;
     color: #fff;
-    height: 100px;
+    height: 80px;
     padding: 10px;
 }
 
@@ -29,7 +29,6 @@ header {
     text-decoration: none;
     color: #ffffff;
     padding: 20px 20px;
-    font-family: "Montserrat", arial, sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
@@ -45,11 +44,6 @@ header {
     border-radius: 20%;
     display: block;
     text-align: center;
-}
-
-.help-icon a:hover {
-    background-color: #19191a;
-    color: #1a40d5;
 }
 
 .logo img {
@@ -85,7 +79,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #1a40d5;
+    color:  #1a40d5;
 }
 .nav-container {
     display: flex;
@@ -108,7 +102,8 @@ nav ul li a:hover {
     color: rgb(0, 0, 0);
     padding: 10px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .hamburger {
@@ -676,7 +671,7 @@ input[type="submit"]:hover {
 
 
 .cover img {
-    height: 600px;
+    height: 620px;
     width: 100%;
 }
 
@@ -1020,7 +1015,6 @@ footer {
 }
 
 
-
 @media (max-width: 768px) {
     body {
         font-size: 16px;
@@ -1219,17 +1213,20 @@ footer {
 
     .cover {
         flex-direction: column;
+        width: 100%;
     }
 
     .cover img {
-        width: 100%; 
-        height: auto;
+        display: none;
     }
 
+    
     .cover-content {
+        background:  linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+        url('./img/cover.jpg') no-repeat center center/cover;
         position: static;
-        margin-top: -60px;
-        color:black;
+        margin-top: 5px;
+        color:rgb(255, 255, 255);
         text-align: center;
         padding: 20px;
     }
