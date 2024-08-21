@@ -133,9 +133,215 @@ nav ul li a:hover {
     font-weight: 700;
 }
 
+
+/*Home Page STARTS*/
+.cover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.cover-content {
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    color: #fff;
+    text-align: center;
+}
+
+.cover-content h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.cover-content p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+
+.cover img {
+    height: 620px;
+    width: 100%;
+}
+
+.cover-button {
+    position: absolute;
+    top: 100%;
+    left: 38%;
+    padding: 12px 24px;
+    background-color: #1a40d5;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    
+}
+.cover-button:hover{
+    background-color: #0033ff;
+    font-size: 18px;
+    box-shadow: 3px 4px 5px;
+}
+
+.services {
+    display: grid;
+    justify-content: center;
+    height: 73vh;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px; /* Same as row gap */
+    row-gap: 10px; /* Same as column gap */
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.service-feature {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.service-feature img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.overlay p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.service-feature:hover .overlay {
+    background-color: rgba(2, 191, 244, 0.4);
+    font-size: 30px;
+    transition: transform 0.9s ease, background-color 0.9s ease;
+}
+
+
+
+.testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-image: url('./img/Background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    font-family: "Montserrat",Arial, Helvetica, sans-serif;
+}
+
+.testimonial {
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+}
+
+.testimonial h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.user-review {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 30%;
+    display: flex;
+    align-items: flex-start;
+    background-color: #fefefe;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    margin: 10px;
+    min-width: 250px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.user-review:hover {
+    background-color: #b7dff0;
+    transform: scale(1.05);
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.user-image {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+}
+
+.user-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-details h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+    font-weight: bold;
+}
+
+.user-position {
+    margin: 0;
+    font-size: 0.9em;
+    color: #888;
+    font-style: italic;
+}
+
+blockquote {
+    margin: 0;
+    font-style: italic;
+    font-size: 1.1em;
+    color: #444;
+    border-left: 3px solid #ddd;
+    padding-left: 15px;
+    position: relative;
+}
+/*Home Page ENDS*/
+
 /*membership form Page STARTS*/
 .form-body{
-    font-family: 'Roboto', sans-serif;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -191,7 +397,8 @@ legend {
 .form-group input[type="text"], 
 .form-group input[type="email"], 
 .form-group input[type="tel"], 
-.form-group input[type="date"] {
+.form-group input[type="date"],
+.form-group textarea {
     width: 100%;
     padding: 10px;
     border: 2px solid #ccc;
@@ -202,7 +409,8 @@ legend {
 .form-group input[type="text"]:focus, 
 .form-group input[type="email"]:focus, 
 .form-group input[type="tel"]:focus, 
-.form-group input[type="date"]:focus{
+.form-group input[type="date"]:focus,
+.form-group textarea{
     border-color: #007BFF;
 }
 
@@ -640,210 +848,109 @@ input[type="submit"]:hover {
 }
 /*Blog Page ENDS*/
 
+/*Contact Us Page STARTS*/
 
-.cover {
+.heading{
+    text-align: center;
+}
+.contact-containner{
     display: flex;
-    align-items: center;
     justify-content: center;
-    font-size: 24px;
-    margin-top: 10px;
+    align-items: center;
+    flex-direction: row;
+    width: 100%; 
+    height: 50%;
     margin-bottom: 20px;
+    padding: 10px;
+    background-color: #ffffff; 
 }
 
-.cover-content {
-    position: absolute;
-    top: 50%;
-    left: 55%;
-    color: #fff;
+.container1 h1,p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
     text-align: center;
 }
 
-.cover-content h1 {
-    font-size: 48px;
-    margin-bottom: 10px;
-}
-
-.cover-content p {
-    font-size: 24px;
+.container2{
+    border:1px solid white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+    width:40%;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
-
-.cover img {
-    height: 620px;
-    width: 100%;
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centering the button horizontally */
+}
+.contactFieldSet{
+    border: 0px solid white;
+    margin-bottom: 0;
 }
 
-.cover-button {
-    position: absolute;
+.contact-group{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+
+.names{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 30px;
+}
+
+
+.contact-group label{
+    width: 30%;
+    min-width: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    white-space: wrap;
+}
+
+.contact-group input[type="text"], 
+.contact-group input[type="email"], 
+.contact-group input[type="tel"], 
+.contact-group input[type="date"],
+.contact-group textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: #dfd6d6;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+.contact-group input[type="text"]:focus, 
+.contact-group input[type="email"]:focus, 
+.contact-group input[type="tel"]:focus, 
+.contact-group input[type="date"]:focus{
+    border-color: #007BFF;
+}
+
+.contactButton{
+    position: relative;
     top: 100%;
-    left: 38%;
     padding: 12px 24px;
     background-color: #1a40d5;
     color: #fff;
     text-decoration: none;
     font-size: 16px;
     border-radius: 5px;
-    
+    margin-bottom: 10px;
 }
-.cover-button:hover{
-    background-color: #0033ff;
-    font-size: 18px;
-    box-shadow: 3px 4px 5px;
-}
+/*Contact Us Page ENDS*/
 
-.services {
-    display: grid;
-    justify-content: center;
-    height: 73vh;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 10px; /* Same as row gap */
-    row-gap: 10px; /* Same as column gap */
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.service-feature {
-    position: relative;
-    overflow: hidden;
-    height: 100%;
-    border-radius: 10px;
-}
-
-.image-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-.service-feature img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 10px;
-}
-
-.overlay p {
-    margin: 0;
-    font-weight: bold;
-    font-size: 30px;
-    margin-bottom: 20px;
-}
-
-.service-feature:hover .overlay {
-    background-color: rgba(2, 191, 244, 0.4);
-    font-size: 30px;
-    transition: transform 0.9s ease, background-color 0.9s ease;
-}
-
-
-
-.testimonials {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: stretch;
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 20px;
-    background-image: url('./img/Background.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 10px;
-    border: 1px solid #e0e0e0;
-    font-family: "Montserrat",Arial, Helvetica, sans-serif;
-}
-
-.testimonial {
-    flex: 1 1 100%;
-    margin-bottom: 20px;
-}
-
-.testimonial h2 {
-    text-align: center;
-    color: #333;
-    margin-bottom: 25px;
-    font-size: 2em;
-    font-weight: 500;
-}
-
-.user-review {
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: 30%;
-    display: flex;
-    align-items: flex-start;
-    background-color: #fefefe;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    position: relative;
-    margin: 10px;
-    min-width: 250px;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
-.user-review:hover {
-    background-color: #b7dff0;
-    transform: scale(1.05);
-}
-
-.user-profile {
-    display: flex;
-    align-items: center;
-    margin-right: 20px;
-}
-
-.user-image {
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    margin-right: 15px;
-}
-
-.user-details {
-    display: flex;
-    flex-direction: column;
-}
-
-.user-details h3 {
-    margin: 0;
-    font-size: 1.2em;
-    color: #333;
-    font-weight: bold;
-}
-
-.user-position {
-    margin: 0;
-    font-size: 0.9em;
-    color: #888;
-    font-style: italic;
-}
-
-blockquote {
-    margin: 0;
-    font-style: italic;
-    font-size: 1.1em;
-    color: #444;
-    border-left: 3px solid #ddd;
-    padding-left: 15px;
-    position: relative;
-}
 
 footer {
     background-color: #000000;
@@ -1069,13 +1176,13 @@ footer {
     .form-group label {
         width: 100%;
         text-align: left;
-        margin-bottom: 5px;
+        margin-bottom: 20px;
     }
 
     .form-group input[type="text"], 
     .form-group input[type="email"], 
     .form-group input[type="tel"], 
-    .form-group input[type="date"] {
+    .form-group input[type="date"]  {
         width: 90%;
         padding: 10px;
         border: 2px solid #ccc;
@@ -1137,7 +1244,79 @@ footer {
         display: none;
     }
 
+    .contact-containner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%; 
+        height: 50%;
+        margin-bottom: 20px;
+        padding: 10px;
+        background-color: #ffffff; 
+    }
+
+    .container2{
+        border:1px solid white;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+        width:70%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
     
+    .contactFieldSet{
+        border: 0px solid white;
+        margin-bottom: 0;
+    }
+    
+    .contact-group{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-right: 20px;
+    }
+    
+    .names{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        gap: 30px;
+    }
+    
+    
+    .contact-group label{
+        width: 30%;
+        min-width: 50px;
+        font-size: 1rem;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        white-space: wrap;
+    }
+    
+    .contact-group input[type="text"], 
+    .contact-group input[type="email"], 
+    .contact-group input[type="tel"], 
+    .contact-group input[type="date"],
+    .contact-group textarea {
+        width: 100%;
+        padding: 10px;
+        background-color: #dfd6d6;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        transition: border-color 0.3s ease;
+    }
+    
+    .contact-group input[type="text"]:focus, 
+    .contact-group input[type="email"]:focus, 
+    .contact-group input[type="tel"]:focus, 
+    .contact-group input[type="date"]:focus{
+        border-color: #007BFF;
+    }
+
+
     .cover-content {
         background:  linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
         url('./img/cover.jpg') no-repeat center center/cover;

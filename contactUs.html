@@ -22,7 +22,7 @@
                 <li class = "nav-item help-icon">
                     <a href="help.html" title="Help"><span>Help ?</span>
                     </a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
             </ul>
         </nav>
     </div>
@@ -46,7 +46,45 @@
     </header>
 
     <main>
-       <!-- Main Page -->
+      <div class="title">Contact Us</div>
+        <div class="heading"><h1>Looking for something specific and can't find it?</h1></div>
+        <div class="contact-containner">
+            <div class="container1">
+                <h1>Contact Us</h1>
+                <p>Want to know more about Fitoss or need to get in touch?</p>
+            </div>
+            <div class="container2">
+                <form>
+                    <fieldset class="contactFieldSet">
+                        <div class="contact-group">
+                            <div class="names">
+                                <div>
+                                    <label for="firstName">First Name</label>
+                                    <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+                                </div>
+                                <div>
+                                    <label for="lastName">Last Name</label>
+                                    <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-group">
+                            <label for="mobileNumber">Mobile No</label>
+                            <input type="tel" id="mobileNumber" name="mobileNumber" placeholder="123-456-7890" required>
+                        </div>
+                        <div class="contact-group">
+                            <label for="mailAddress">E-Mail</label>
+                            <input type="email" id="mailAddress" name="mailAddress" placeholder="Mail Address" required>
+                        </div>
+                        <div class="contact-group">
+                            <label for="message">Message</label>
+                            <textarea id="message"  name="message" rows="4" required></textarea>
+                        </div>
+                    </fieldset>
+                    <button class="contactButton">Submit</button>
+                </form>
+            </div>
+        </div>
     </main>
 
     <footer>
