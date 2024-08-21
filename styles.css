@@ -1042,7 +1042,7 @@ footer {
         align-items: center;
         flex-direction: column;
         text-align: center;
-        width: 90%;
+        width: 87%;
         max-width: 1200px;
         margin: 0 auto;
         padding: 20px; 
@@ -1057,7 +1057,7 @@ footer {
         border:1px solid white;
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
-        width:70%;
+        width:100%;
         margin-top: 20px;
         margin-bottom: 20px;
     }
@@ -1325,7 +1325,7 @@ footer {
         align-items: center;
         flex-direction: column;
         text-align: center;
-        width: 90%;
+        width: 87%;
         max-width: 1200px;
         margin: 0 auto;
         padding: 20px; /* Add some padding for better spacing */
@@ -1340,7 +1340,7 @@ footer {
         border:1px solid white;
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
-        width:70%;
+        width:100%;
         margin-top: 20px;
         margin-bottom: 20px;
     }
