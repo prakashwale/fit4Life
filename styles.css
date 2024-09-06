@@ -1078,6 +1078,7 @@ footer {
     .names{
         display: flex;
         flex-direction: row;
+        text-align: start;
         width: 100%;
         gap: 30px;
     }
