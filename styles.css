@@ -959,7 +959,7 @@ form{
     justify-content: center;
     height: 50vh;
     text-align: center;
-    column-gap: 10px; /* Same as row gap */
+    column-gap: 20px; /* Same as row gap */
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 10px;
@@ -987,9 +987,11 @@ form{
     transition: border 0.3s ease;
 }
 
-.age-Type:hover img {
+.age-Type:hover img{
     transform: scale(1.05); /* Zoom effect */
-    border-color: #00bfff;
+}
+.age-Type:hover P{
+    transform: scale(1.05); /* Zoom effect */
 }
 
 
@@ -1563,7 +1565,7 @@ footer {
 
     .age-Type img {
         width: 100%; /* Make images responsive */
-        max-width: 350px; /* Limit the width */
+        max-width: 300px; /* Limit the width */
         height: auto; /* Adjust height proportionally */
     }
 
