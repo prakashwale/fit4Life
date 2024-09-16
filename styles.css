@@ -144,9 +144,14 @@ nav ul li a:hover {
     margin-bottom: 20px;
 }
 
+.cover-image{
+    position: relative;
+    z-index: -1;
+    object-fit: cover;
+}
 .cover-content {
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 55%;
     color: #fff;
     text-align: center;
@@ -951,23 +956,26 @@ form{
 /*Cardio Page Starts*/
 .heading{
     text-align: center;
+    margin: 10px;
+    padding:10px;
 }
 
 .age-Types{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    height: 50vh;
+    height: 100%;
     text-align: center;
     column-gap: 20px; /* Same as row gap */
     margin-left: 10px;
     margin-right: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
 }
 
 .age-Type{
     display: block;
     height: 250px;
+    margin-bottom: 15px;
 }
 
 .age-Type p{
@@ -993,10 +1001,8 @@ form{
 .age-Type:hover P{
     transform: scale(1.05); /* Zoom effect */
 }
-
-
-
 /*cardio Page Ends*/
+
 footer {
     background-color: #000000;
     color: #f1f1f1;
@@ -1084,6 +1090,7 @@ footer {
 }
 
 @media (max-width: 912px){
+
     .contact-containner{
         display: flex;
         justify-content: center;
@@ -1167,7 +1174,7 @@ footer {
         flex-wrap: wrap;
         align-items: center; /* Center align items */
         height: auto; /* Allow the height to adjust */
-        column-gap: 0; /* Remove gap as items are stacked */
+        column-gap: 20px; /* Remove gap as items are stacked */
         row-gap: 20px; /* Add space between items */
         margin: 0 10px; /* Adjust margins for mobile */
     }
